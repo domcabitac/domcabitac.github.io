@@ -1,17 +1,3 @@
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("back").style.marginLeft = "250px";
-  document.getElementById("myHeader").style.marginLeft = "250px";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("back").style.marginLeft= "0";
-  document.getElementById("myHeader").style.marginLeft = "0";
-  document.body.style.backgroundColor = "white";
-}
-
 $(document).ready(function(){
     // Add smooth scrolling to all links
     $("a").on('click', function(event) {
