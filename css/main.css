@@ -158,7 +158,6 @@ body {
   text-align: right;
   font-style: italic;
   width: 50%;
-  /* padding-left: 30%; */
   margin-right: 0;
 }
 
@@ -228,6 +227,7 @@ html {
     font-style: italic;
     width: 25%;
     padding-right: 3%;
+    padding-top: 0;
   }
   #CARDTIT {
     margin-bottom: 0;
