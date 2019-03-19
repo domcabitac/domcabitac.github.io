@@ -1,6 +1,7 @@
 $(document).ready(function(){
     $("a").on('click', function(event) {
-  
+      $("text1").fadeOut("fast");
+      $("text2").fadeOut("fast"); 
       if (this.hash !== "") {
         event.preventDefault();
   
@@ -16,4 +17,3 @@ $(document).ready(function(){
       } // End if
     });
   });
-
