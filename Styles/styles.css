@@ -28,11 +28,11 @@ img {
 
 @media only screen and (max-width: 600px) {
     img{
-        display: table-row;
+        /* display: table-row; */
         bottom:0;
         /* padding-top: 30px; */
         /* top: 30%; */
-        padding: 10px;
+        padding: 15px;
     }
     title {
         padding-top: 20%;
