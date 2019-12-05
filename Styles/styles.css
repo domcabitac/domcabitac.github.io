@@ -16,6 +16,7 @@ h1 {
     color: white;
     font-weight: 100;
 }
+
 img {
     /* position: fixed;; */
     display: table-row;
@@ -23,4 +24,27 @@ img {
     /* padding-top: 30px; */
     /* top: 30%; */
     padding: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    img{
+        display: table-row;
+        bottom:0;
+        /* padding-top: 30px; */
+        /* top: 30%; */
+        padding: 20px;
+    }
+    title {
+        padding-top: 20%;
+        font-weight: 300;
+        text-align:center;
+        display:block;
+        color: white;
+        font-size: 70px;
+    }
+    h1 {
+        color: white;
+        font-weight: 100;
+        font-size: 40px;
+    }
 }
