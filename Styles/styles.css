@@ -28,7 +28,7 @@ img {
 
 @media only screen and (max-width: 600px) {
     img{
-        /* display: table-row; */
+        display: inline-block;
         bottom:0;
         /* padding-top: 30px; */
         /* top: 30%; */
