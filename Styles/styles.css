@@ -19,7 +19,7 @@ h1 {
 
 img {
     /* position: fixed;; */
-    display: table-row;
+    display: inline-block;
     bottom:0;
     /* padding-top: 30px; */
     /* top: 30%; */
