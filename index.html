@@ -14,21 +14,17 @@
             DOMINIC CABITAC
         </title>
         <h1>
-            <text href="" class="typewrite" data-period="2000" data-type='[ "Computer Science", "Ontario Tech U", "Front End Developer" ]'>
+            <text href="" class="typewrite" data-period="2000" data-type='[ "Computer Science", "Ontario Tech U", "Front End Developer", "Twenty Three" ]'>
               <span class="wrap"></span>
             </text>
         </h1>
-          <div class="mobile">
         <a href="mailto:dominiccabitac@gmail.com"><img src="images/email.png"/ width="40px"></a>
           <a href="https://github.com/domcabitac" target="_blank"><img src="images/github.jpg"/ width="32px"></a>
           <a href="https://www.instagram.com/d_cabitac/" target="_blank"><img src="images/IG.jpg"/ width="31px"></a>
           <a href="https://www.reddit.com/r/macsetups/comments/d1jzlj/4th_year_computer_science_student_setup" target="_blank"><img src="images/Comp.png"/ width="34px"></a>
-        </div>
     </center>
 </body>
 <script>
-
-
 var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
@@ -79,10 +75,11 @@ var TxtType = function(el, toRotate, period) {
               new TxtType(elements[i], JSON.parse(toRotate), period);
             }
         }
+
         // INJECT CSS
         var css = document.createElement("style");
         css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #ffffff}";
         document.body.appendChild(css);
     };
 
