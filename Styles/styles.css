@@ -5,16 +5,18 @@ body {
 
 title {
     padding-top: 15%;
-    font-weight: 300;
+    font-weight: 250;
     text-align:center;
     display:block;
     color: white;
     font-size: 90px;
 }
 
-h1 {
+#typeWritter {
     color: white;
     font-weight: 100;
+    font-size: 40px;
+
 }
 
 img {
@@ -29,7 +31,7 @@ img {
         display: inline-block;
         bottom:0;
         margin: 15px;
-        margin-top: 40%;
+        margin-top: 65%;
 
     }
     title {
@@ -38,11 +40,12 @@ img {
         text-align:center;
         display:block;
         color: white;
-        font-size: 70px;
+        font-size: 65px;
     }
-    h1 {
+    #typeWritter {
         color: white;
-        font-weight: 100;
-        font-size: 40px;
+        /* font-weight: 50; */
+        font-size: 30px;
+        margin-top: 5%;
     }
 }
