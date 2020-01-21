@@ -5,6 +5,7 @@ body {
 
 title {
     padding-top: 5%;
+    padding-bottom: 1%;
     font-weight: 275;
     text-align:center;
     display:block;
@@ -30,7 +31,7 @@ title {
 	animation-name: fadeInOpacity;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
-	animation-duration: 1.5s;
+	animation-duration: 1.75s;
 }
 
 @keyframes fadeInOpacity {
@@ -43,7 +44,8 @@ title {
 }
 @media only screen and (max-width: 600px) {
     title {
-        padding-top: 20%;
+        padding-top: 15%;
+        padding-bottom: 1%;
         font-weight: 300;
         text-align:center;
         display:block;
