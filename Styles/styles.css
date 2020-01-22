@@ -35,8 +35,11 @@ a:hover {
         bottom:0;
         margin: 12px;
         margin-top: 65%;
-
+        transition: transform 0; /* Animation */
     }
+    a:hover {
+        transform: scale(1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      }
     title {
         padding-top: 20%;
         font-weight: 300;
