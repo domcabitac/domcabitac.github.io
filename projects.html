@@ -6,10 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="images/logo.png" />
     <link rel="stylesheet" href="Styles/projectstyle.css">
+    <script type="text/javascript" src="scripts/index.js"></script>
     <title>Projects</title>
 </head>
 <body>
-    <title>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <title id="current">
+            CURRENT PROJECTS
+        </title>
+            <div class="flex-container">
+                <a href="http://www.domcabitac.com/Harvard-Web-Programming-Course/" target="_blank"><img src="images/WebDevCourse.png"/ width="100%"></a>
+                <a href="https://github.com/domcabitac/RealEstateWebsite" target="_blank"><img src="images/Realestate.png" / width="100%"></a>
+                <a href="http://www.domcabitac.com/Harvard-Mobile-App-Development-with-React-Native-Course/" target="_blank"><img src="images/ReactCourse.png"/ width="100%"></a>
+            </div>
+      </div>
+      
+      <a id="hamburger" onclick="openNav()">&#9776;</a>
+      
+    <title id="project">
         PROJECTS
     </title>
     <div class = "fade-in">
