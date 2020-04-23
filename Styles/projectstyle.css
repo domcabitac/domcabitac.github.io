@@ -19,6 +19,16 @@ body {
     font-size: 90px;
     font-family: -apple-system, BlinkMacSystemFont, 'Avenir','Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+#backbutton {
+  width:  70px;
+  height: 70px;
+  float: left;
+  position: fixed;
+  z-index: 1;
+}
+#backbutton:hover {
+  transform: scale(1.2); 
+}
 
 .flex-container {
     display: flex;
@@ -126,7 +136,12 @@ body {
       top: 0;
       bottom: 0;
     }
-
+    #backbutton {
+      width:  50px;
+      height: 50px;
+      float: left;
+      position: fixed;
+    }
     #mySidenav{
       max-height: calc(112vh - 9rem);
       overflow-y: auto;
