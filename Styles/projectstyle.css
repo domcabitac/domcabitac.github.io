@@ -25,6 +25,7 @@ body {
   float: left;
   position: absolute;
   z-index: 1;
+  transition: transform .2s;
 }
 #backbutton:hover {
   transform: scale(1.2); 
