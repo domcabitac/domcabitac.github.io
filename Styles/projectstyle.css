@@ -2,22 +2,22 @@
   font-family: "Avenir";
   src:
   url("Styles/font/AvenirLTStd-Medium.otf") format("opentype"),
-  }
+}
 
 body {
-    background-color: #ffffff;
-    font-family: -apple-system, BlinkMacSystemFont, 'Avenir','Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
+  background-color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Avenir','Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
 #project {
-    padding-top: 3%;
-    padding-bottom: 1%;
-    font-weight: 300;
-    text-align:center;
-    display:block;
-    color: #3A3A3A;
-    font-size: 90px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Avenir','Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding-top: 3%;
+  padding-bottom: 1%;
+  font-weight: 300;
+  text-align:center;
+  display:block;
+  color: #3A3A3A;
+  font-size: 90px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Avenir','Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 #backbutton {
   width:  70px;
@@ -27,155 +27,165 @@ body {
   z-index: 1;
   transition: transform .2s;
 }
+
 #backbutton:hover {
-  transform: scale(1.2); 
+  transform: scale(1.1); 
 }
 
 .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
 .flex-container > a {
-    width: 450px;
-    margin: 15px;
-    font-size: 30px;
-    justify-content: center;
-    transition: transform .2s; /* Animation */
-  }
-  
+  width: 450px;
+  margin: 15px;
+  font-size: 30px;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.flex-container > a > img {
+  animation: fadeInAndScale 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeInAndScale {
+	from {
+		opacity: 0;
+		transform: scale(0);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
 .fade-in {
-	opacity: 1;
-	animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-    animation-duration: 1.75s;
-    max-width: 1500px;
-    margin: 0 auto;
+  max-width: 1500px;
+  margin: 0 auto;
 }
   
-  a:hover {
-    transform: scale(1.05); 
+a:hover {
+  transform: scale(1.05); 
+}
+
+#hamburger {
+  font-size:50px;
+  cursor:pointer;   
+  position: absolute;
+  top: 8px;
+  right: 16px; 
+  color: #3A3A3A;
+}
+#current {
+  padding-bottom: 1%;
+  font-weight: 300;
+  text-align:center;
+  display:block;
+  color: #ffffff;
+  font-size: 90px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Avenir','Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #3A3A3A;
+  overflow-x: hidden;
+  transition: 0.7s;
+  padding-top: 60px;
+  text-align:center;
+}
+
+.sidenav a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover{
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 3px;
+  right: 16px;
+  font-size: 70px;
+}
+
+@media only screen and (max-width: 600px) {
+  #project {
+    padding-top: 15%;
+    padding-bottom: 1%;
+    font-weight: 300;
+    text-align:center;
+    display:block;
+    color: #3A3A3A;
+    font-size: 65px;
+  }  
+
+  #current {
+    padding-bottom: 1%;
+    font-weight: 300;
+    text-align:center;
+    display:block;
+    color: white;
+    font-size: 60px;
+    top: 0;
+    bottom: 0;
   }
 
+  #backbutton {
+    width:  50px;
+    height: 50px;
+    float: left;
+    position: absolute;
+  }
+
+  #mySidenav{
+    max-height: calc(112vh - 9rem);
+    overflow-y: auto;
+  }
+  
   #hamburger {
-    font-size:50px;
+    font-size:30px;
     cursor:pointer;   
     position: absolute;
     top: 8px;
     right: 16px; 
     color: #3A3A3A;
   }
-  #current {
-    padding-bottom: 1%;
-    font-weight: 300;
-    text-align:center;
-    display:block;
-    color: #ffffff;
-    font-size: 90px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Avenir','Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-  .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background-color: #3A3A3A;
-    overflow-x: hidden;
-    transition: 0.7s;
-    padding-top: 60px;
-    text-align:center;
-  }
-  
-  .sidenav a {
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidenav a:hover{
-    color: #f1f1f1;
-  }
-  
+
   .sidenav .closebtn {
     position: absolute;
-    top: 3px;
+    top: 0px;
     right: 16px;
-    font-size: 70px;
+    font-size: 50px;
   }
-  
-@keyframes fadeInOpacity {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-@media only screen and (max-width: 600px) {
-    #project {
-        padding-top: 15%;
-        padding-bottom: 1%;
-        font-weight: 300;
-        text-align:center;
-        display:block;
-        color: #3A3A3A;
-        font-size: 65px;
-    }  
 
-    #current {
-      padding-bottom: 1%;
-      font-weight: 300;
-      text-align:center;
-      display:block;
-      color: white;
-      font-size: 60px;
-      top: 0;
-      bottom: 0;
-    }
-    #backbutton {
-      width:  50px;
-      height: 50px;
-      float: left;
-      position: absolute;
-    }
-    #mySidenav{
-      max-height: calc(112vh - 9rem);
-      overflow-y: auto;
-    }
-    
-    #hamburger {
-      font-size:30px;
-      cursor:pointer;   
-      position: absolute;
-      top: 8px;
-      right: 16px; 
-      color: #3A3A3A;
-    }
-    .sidenav .closebtn {
-      position: absolute;
-      top: 0px;
-      right: 16px;
-      font-size: 50px;
-    }
-    .flex-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-#backbutton:hover {
-  transform: scale(1); 
-}
-    .flex-container > a {
-        width: 400px;
-        transition: transform 0; /* Animation */
-      }
-      a:hover {
-        transform: scale(1); 
-      }
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #backbutton:hover {
+    transform: scale(1); 
+  }
+  .flex-container > a {
+    width: 400px;
+    transition: transform 0; /* Animation */
+  }
+  a:hover {
+    transform: scale(1); 
+  }
     
 }
