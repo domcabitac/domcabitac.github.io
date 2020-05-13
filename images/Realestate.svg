@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="459px" height="307px" viewBox="0 0 459 307" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Realestate</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="0%" cy="50%" fx="0%" fy="50%" r="149.511401%" gradientTransform="translate(0.000000,0.500000),scale(0.668845,1.000000),rotate(-0.000044),scale(1.000000,1.285015),translate(-0.000000,-0.500000)" id="radialGradient-1">
+            <stop stop-color="#8A2387" offset="0%"></stop>
+            <stop stop-color="#E94057" offset="49.8521959%"></stop>
+            <stop stop-color="#F27121" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Realestate" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill="url(#radialGradient-1)" x="0" y="0" width="459" height="307"></rect>
+        <text id="Personal-Website" font-family="AvenirLTStd-Book, Avenir LT Std" font-size="45" font-weight="300" fill="#FFFFFF">
+            <tspan x="30.4475" y="171">Real Estate Website</tspan>
+        </text>
+    </g>
+</svg>

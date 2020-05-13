@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="459px" height="307px" viewBox="0 0 459 307" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Advanced</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="14.4684289%" cy="69.1116773%" fx="14.4684289%" fy="69.1116773%" r="85.7775947%" gradientTransform="translate(0.144684,0.691117),scale(0.668845,1.000000),rotate(-26.956306),scale(1.000000,1.285015),translate(-0.144684,-0.691117)" id="radialGradient-1">
+            <stop stop-color="#9963D2" offset="0%"></stop>
+            <stop stop-color="#2F0743" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Advanced" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill="url(#radialGradient-1)" x="0" y="0" width="459" height="307"></rect>
+        <text id="Advanced-Wars-Mobile" font-family="AvenirLTStd-Book, Avenir LT Std" font-size="40" font-weight="300" fill="#FFFFFF">
+            <tspan x="22.04" y="171">Advanced Wars Mobile</tspan>
+        </text>
+    </g>
+</svg>
