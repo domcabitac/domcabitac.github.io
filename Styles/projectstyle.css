@@ -39,8 +39,8 @@ body {
 }
 
 .flex-container > a {
-  width: 450px;
-  margin: 15px;
+  width: 351px;
+  margin: 12px;
   font-size: 30px;
   justify-content: center;
   transition: 0.3s;
