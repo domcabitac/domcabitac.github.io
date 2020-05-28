@@ -40,7 +40,7 @@ body {
 }
 
 .flex-container > a {
-  width: 351px;
+  width: 370px;
   margin: 12px;
   font-size: 30px;
   justify-content: center;
@@ -63,7 +63,7 @@ body {
 }
 
 .fade-in {
-  max-width: 1550px;
+  max-width: 1490px;
   margin: 0 auto;
 }
   
