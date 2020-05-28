@@ -6,7 +6,7 @@
 
 body {
   background-color: #ffffff;
-  font-family: -apple-system, BlinkMacSystemFont, 'Avenir','Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Avenir';
 }
 
 #project {
@@ -17,8 +17,9 @@ body {
   display:block;
   color: #3A3A3A;
   font-size: 90px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Avenir','Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Avenir';
 }
+
 #backbutton {
   width:  70px;
   height: 70px;
@@ -85,7 +86,7 @@ a:hover {
   display:block;
   color: #ffffff;
   font-size: 90px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Avenir','Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Avenir';
 }
 
 .sidenav {
