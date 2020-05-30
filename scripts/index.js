@@ -42,10 +42,86 @@ function openNav() {
     document.getElementById("mySidenav").style.width = "100%";
   }
   
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-  }
-  
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+function hoverTinder(element) {
+  element.setAttribute('src', '../images/TinderV2.png');
+}
+
+function unhoverTinder(element) {
+  element.setAttribute('src', '../images/Tinder.png');
+}
+
+function hoverAdvanced(element) {
+  element.setAttribute('src', '../images/AdvancedV2.png');
+}
+
+function unhoverAdvanced(element) {
+  element.setAttribute('src', '../images/Advanced.png');
+}
+
+function hoverWebsite(element) {
+  element.setAttribute('src', '../images/WebsiteV2.png');
+}
+
+function unhoverWebsite(element) {
+  element.setAttribute('src', '../images/Website.png');
+}
+
+function hoverBeauty(element) {
+  element.setAttribute('src', '../images/BeautyV2.png');
+}
+
+function unhoverBeauty(element) {
+  element.setAttribute('src', '../images/Beauty.png');
+}
+
+function hoverGOT(element) {
+  element.setAttribute('src', '../images/GotNextV2.png');
+}
+
+function unhoverGOT(element) {
+  element.setAttribute('src', '../images/GotNext.png');
+}
+
+function hoverWUI(element) {
+  element.setAttribute('src', '../images/WUIV2.png');
+}
+
+function unhoverWUI(element) {
+  element.setAttribute('src', '../images/WUI.png');
+}
+
+function hoverWUI(element) {
+  element.setAttribute('src', '../images/WUIV2.png');
+}
+
+function unhoverSQA(element) {
+  element.setAttribute('src', '../images/SQA.png');
+}
+
+function hoverSQA(element) {
+  element.setAttribute('src', '../images/SQAV2.png');
+}
+
+function unhoverCOVID(element) {
+  element.setAttribute('src', '../images/COVID.png');
+}
+
+function hoverCOVID(element) {
+  element.setAttribute('src', '../images/COVIDV2.png');
+}
+
+function hoverPig(element) {
+  element.setAttribute('src', '../images/PigGameV2.png');
+}
+
+function unhoverPig(element) {
+  element.setAttribute('src', '../images/PigGame.png');
+}
+
 window.onload = function() {
     var elements = document.getElementsByClassName('typewrite');
     for (var i=0; i<elements.length; i++) {
