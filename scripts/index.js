@@ -40,7 +40,7 @@ TxtType.prototype.tick = function() {
 };
 function openNav() {
     document.getElementById("mySidenav").style.width = "100%";
-  }
+}
   
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
@@ -131,7 +131,14 @@ window.onload = function() {
           new TxtType(elements[i], JSON.parse(toRotate), period);
         }
     }
-
+    var is_touch_device = 'ontouchstart' in document.documentElement;
+    if (is_touch_device) {
+    var elements = document.getElementsByTagName("img");
+    for (var i=0;i<elements.length;i++) {
+        elements[i].onmouseover = null;
+        elements[i].onmouseout = null;
+    }
+}
     // INJECT CSS
     var css = document.createElement("style");
     css.type = "text/css";
