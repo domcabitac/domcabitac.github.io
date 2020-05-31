@@ -47,7 +47,7 @@ function closeNav() {
 }
 
 function hoverTinder(element) {
-  element.setAttribute('src', '../images/TinderV2.png');
+  element.setAttribute('src', '../images/Tinderv2.png');
 }
 
 function unhoverTinder(element) {
