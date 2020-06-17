@@ -63,7 +63,7 @@ function unhoverAdvanced(element) {
 }
 
 function hoverWebsite(element) {
-  element.setAttribute('src', '../images/WebsiteV2.jpg');
+  element.setAttribute('src', '../images/Websitev2.jpg');
 }
 
 function unhoverWebsite(element) {
