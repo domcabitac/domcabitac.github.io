@@ -47,79 +47,79 @@ function closeNav() {
 }
 
 function hoverTinder(element) {
-  element.setAttribute('src', '../images/Tinderv2.png');
+  element.setAttribute('src', '../images/Tinderv2.jpg');
 }
 
 function unhoverTinder(element) {
-  element.setAttribute('src', '../images/Tinder.png');
+  element.setAttribute('src', '../images/Tinder.jpg');
 }
 
 function hoverAdvanced(element) {
-  element.setAttribute('src', '../images/AdvancedV2.png');
+  element.setAttribute('src', '../images/AdvancedV2.jpg');
 }
 
 function unhoverAdvanced(element) {
-  element.setAttribute('src', '../images/Advanced.png');
+  element.setAttribute('src', '../images/Advanced.jpg');
 }
 
 function hoverWebsite(element) {
-  element.setAttribute('src', '../images/WebsiteV2.png');
+  element.setAttribute('src', '../images/WebsiteV2.jpg');
 }
 
 function unhoverWebsite(element) {
-  element.setAttribute('src', '../images/Website.png');
+  element.setAttribute('src', '../images/Website.jpg');
 }
 
 function hoverBeauty(element) {
-  element.setAttribute('src', '../images/BeautyV2.png');
+  element.setAttribute('src', '../images/BeautyV2.jpg');
 }
 
 function unhoverBeauty(element) {
-  element.setAttribute('src', '../images/Beauty.png');
+  element.setAttribute('src', '../images/Beauty.jpg');
 }
 
 function hoverGOT(element) {
-  element.setAttribute('src', '../images/GotNextV2.png');
+  element.setAttribute('src', '../images/GotNextV2.jpg');
 }
 
 function unhoverGOT(element) {
-  element.setAttribute('src', '../images/GotNext.png');
+  element.setAttribute('src', '../images/GotNext.jpg');
 }
 
 function hoverWUI(element) {
-  element.setAttribute('src', '../images/WUIV2.png');
+  element.setAttribute('src', '../images/WUIV2.jpg');
 }
 
 function unhoverWUI(element) {
-  element.setAttribute('src', '../images/WUI.png');
+  element.setAttribute('src', '../images/WUI.jpg');
 }
 
 function hoverWUI(element) {
-  element.setAttribute('src', '../images/WUIV2.png');
+  element.setAttribute('src', '../images/WUIV2.jpg');
 }
 
 function unhoverSQA(element) {
-  element.setAttribute('src', '../images/SQA.png');
+  element.setAttribute('src', '../images/SQA.jpg');
 }
 
 function hoverSQA(element) {
-  element.setAttribute('src', '../images/SQAV2.png');
+  element.setAttribute('src', '../images/SQAV2.jpg');
 }
 
 function unhoverCOVID(element) {
-  element.setAttribute('src', '../images/COVID.png');
+  element.setAttribute('src', '../images/COVID.jpg');
 }
 
 function hoverCOVID(element) {
-  element.setAttribute('src', '../images/COVIDV2.png');
+  element.setAttribute('src', '../images/COVIDV2.jpg');
 }
 
 function hoverPig(element) {
-  element.setAttribute('src', '../images/PigGameV2.png');
+  element.setAttribute('src', '../images/PigGameV2.jpg');
 }
 
 function unhoverPig(element) {
-  element.setAttribute('src', '../images/PigGame.png');
+  element.setAttribute('src', '../images/PigGame.jpg');
 }
 
 window.onload = function() {
