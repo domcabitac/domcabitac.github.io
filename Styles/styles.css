@@ -1,8 +1,7 @@
 @font-face {
     font-family: 'Avenir LT Std';
     src:
-    url('www.domcabitac.com/Styles/fonts/AvenirLTStd-Book.woff') format('woff');}
-}
+    url('fonts/AvenirLTStd-Book.woff') format('woff');}
 
 body {
     background-color: #ffffff;
