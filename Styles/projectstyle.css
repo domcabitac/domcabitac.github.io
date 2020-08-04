@@ -1,22 +1,23 @@
 @font-face {
-  font-family: 'Avenir';
-  src: url('Styles/font/AvenirLTStd-Medium.otf') format('opentype');
-}
+  font-family: 'Avenir LT Std';
+  src:
+  url('www.domcabitac.com/Styles/fonts/AvenirLTStd-Book.woff') format('woff');}
+
 
 body {
   background-color: #ffffff;
-  font-family: 'Avenir';
+  font-family: 'Avenir LT Std';
 }
 
 #project {
   padding-top: 1%;
   /* padding-bottom: 1%; */
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
   display: block;
   color: #3a3a3a;
   font-size: 90px;
-  font-family: 'Avenir';
+  font-family: 'Avenir LT Std';
 }
 
 #backbutton {
