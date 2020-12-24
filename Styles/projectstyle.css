@@ -8,15 +8,22 @@ body {
     font-family: 'Avenir LT Std';
 }
 
-#project {
+#code {
     padding-top: 1%;
-    /* padding-bottom: 1%; */
-    font-weight: 400;
+    font-weight: 500;
     text-align: center;
     display: block;
     color: #3a3a3a;
     font-size: 90px;
     font-family: 'Avenir LT Std';
+}
+
+.projects {
+    font-size: 45px;
+    text-align: center;
+    margin: 12px;
+    font-weight: 100;
+    text-transform: uppercase;
 }
 
 .box:hover {
@@ -45,7 +52,7 @@ body {
 
 .flex-container>a {
     width: 349px;
-    margin: 12px;
+    margin: 10px;
     font-size: 30px;
     justify-content: center;
     transition: 250ms all ease;
@@ -131,14 +138,18 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-    #project {
+    #code {
         padding-top: 15%;
         padding-bottom: 1%;
-        font-weight: 300;
+        font-weight: 500;
         text-align: center;
         display: block;
         color: #3a3a3a;
         font-size: 65px;
+    }
+    .projects {
+        font-size: 40px;
+        font-weight: 100;
     }
     #current {
         padding-bottom: 1%;
