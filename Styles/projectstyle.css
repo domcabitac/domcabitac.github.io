@@ -1,192 +1,193 @@
 @font-face {
-  font-family: 'Avenir LT Std';
-  src:
-  url('fonts/AvenirLTStd-Book.woff') format('woff');}
-
+    font-family: 'Avenir LT Std';
+    src: url('fonts/AvenirLTStd-Book.woff') format('woff');
+}
 
 body {
-  background-color: #ffffff;
-  font-family: 'Avenir LT Std';
+    background-color: #ffffff;
+    font-family: 'Avenir LT Std';
 }
 
 #project {
-  padding-top: 1%;
-  /* padding-bottom: 1%; */
-  font-weight: 400;
-  text-align: center;
-  display: block;
-  color: #3a3a3a;
-  font-size: 90px;
-  font-family: 'Avenir LT Std';
-}
-
-#backbutton {
-  width: 70px;
-  height: 70px;
-  float: left;
-  position: absolute;
-  z-index: 1;
-  transition: transform 0.2s;
-}
-
-#backbutton:hover {
-  transform: scale(1.2);
-}
-
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.flex-container > a {
-  width: 349px;
-  margin: 12px;
-  font-size: 30px;
-  justify-content: center;
-  transition: 0.3s;
-}
-
-.flex-container > a > img {
-  animation: fadeInAndScale 0.8s ease-in-out forwards;
-}
-
-@keyframes fadeInAndScale {
-  from {
-    opacity: 0;
-    transform: scale(0);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-.fade-in {
-  max-width: 1490px;
-  margin: 0 auto;
-}
-
-a:hover {
-  transform: scale(1.03);
-}
-
-#hamburger {
-  font-size: 50px;
-  cursor: pointer;
-  position: absolute;
-  top: 8px;
-  right: 16px;
-  color: #3a3a3a;
-  transition: transform 0.2s;
-}
-#current {
-  padding-bottom: 2%;
-  font-weight: 300;
-  text-align: center;
-  display: block;
-  color: #ffffff;
-  font-size: 90px;
-  font-family: 'Avenir';
-}
-
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  background-color: #3a3a3a;
-  overflow-x: hidden;
-  transition: 0.7s;
-  padding-top: 60px;
-  text-align: center;
-}
-
-.sidenav a {
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 3px;
-  right: 16px;
-  font-size: 70px;
-}
-
-@media only screen and (max-width: 600px) {
-  #project {
-    padding-top: 15%;
-    padding-bottom: 1%;
-    font-weight: 300;
+    padding-top: 1%;
+    /* padding-bottom: 1%; */
+    font-weight: 400;
     text-align: center;
     display: block;
     color: #3a3a3a;
-    font-size: 65px;
-  }
+    font-size: 90px;
+    font-family: 'Avenir LT Std';
+}
 
-  #current {
-    padding-bottom: 1%;
-    font-weight: 300;
-    text-align: center;
-    display: block;
-    color: white;
-    font-size: 60px;
-    top: 0;
-    bottom: 0;
-  }
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 5px 10px 50px rgba(#000, 0.1);
+}
 
-  #backbutton {
-    width: 50px;
-    height: 50px;
+#backbutton {
+    width: 70px;
+    height: 70px;
     float: left;
     position: absolute;
-  }
+    z-index: 1;
+    transition: transform 0.2s;
+}
 
-  #mySidenav {
-    max-height: calc(112vh - 9rem);
-    overflow-y: auto;
-  }
+#backbutton:hover {
+    transform: scale(1.2);
+}
 
-  #hamburger {
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-container>a {
+    width: 349px;
+    margin: 12px;
     font-size: 30px;
+    justify-content: center;
+    transition: 250ms all ease;
+}
+
+.flex-container>a>img {
+    animation: fadeInAndScale 0.8s ease-in-out forwards;
+    transition: 250ms all ease;
+}
+
+@keyframes fadeInAndScale {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.fade-in {
+    max-width: 1490px;
+    margin: 0 auto;
+}
+
+
+/* a:hover {
+    transform: scale(1.03);
+} */
+
+#hamburger {
+    font-size: 50px;
     cursor: pointer;
     position: absolute;
     top: 8px;
     right: 16px;
     color: #3a3a3a;
-  }
+    transition: transform 0.2s;
+}
 
-  .sidenav .closebtn {
+#current {
+    padding-bottom: 2%;
+    font-weight: 300;
+    text-align: center;
+    display: block;
+    color: #ffffff;
+    font-size: 90px;
+    font-family: 'Avenir';
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #3a3a3a;
+    overflow-x: hidden;
+    transition: 0.7s;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.sidenav a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
     position: absolute;
-    top: 0px;
+    top: 3px;
     right: 16px;
-    font-size: 50px;
-  }
+    font-size: 70px;
+}
 
-  .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  #backbutton:hover {
-    transform: scale(1);
-  }
-  .flex-container > a {
-    width: 400px;
-    transition: transform 0; /* Animation */
-  }
-  a:hover {
-    transform: scale(1);
-  }
+@media only screen and (max-width: 600px) {
+    #project {
+        padding-top: 15%;
+        padding-bottom: 1%;
+        font-weight: 300;
+        text-align: center;
+        display: block;
+        color: #3a3a3a;
+        font-size: 65px;
+    }
+    #current {
+        padding-bottom: 1%;
+        font-weight: 300;
+        text-align: center;
+        display: block;
+        color: white;
+        font-size: 60px;
+        top: 0;
+        bottom: 0;
+    }
+    #backbutton {
+        width: 50px;
+        height: 50px;
+        float: left;
+        position: absolute;
+    }
+    #mySidenav {
+        max-height: calc(112vh - 9rem);
+        overflow-y: auto;
+    }
+    #hamburger {
+        font-size: 30px;
+        cursor: pointer;
+        position: absolute;
+        top: 8px;
+        right: 16px;
+        color: #3a3a3a;
+    }
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0px;
+        right: 16px;
+        font-size: 50px;
+    }
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #backbutton:hover {
+        transform: scale(1);
+    }
+    .flex-container>a {
+        width: 400px;
+        transition: transform 0;
+        /* Animation */
+    }
+    a:hover {
+        transform: scale(1);
+    }
 }
