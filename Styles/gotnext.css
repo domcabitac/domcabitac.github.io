@@ -140,9 +140,9 @@ a:hover {
 
 @media screen and (max-width: 400px) {
     #mainTitle {
-        font-size: 35px;
+        font-size: 45px;
         font-weight: 500;
-        margin-bottom: rem;
+        margin-bottom: 0.2rem;
     }
     .description {
         font-size: 1rem;
