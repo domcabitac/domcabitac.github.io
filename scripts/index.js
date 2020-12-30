@@ -41,6 +41,7 @@ TxtType.prototype.tick = function() {
     }, delta);
 };
 
+
 function openNav() {
     document.getElementById('mySidenav').style.width = '100%';
 }
@@ -142,7 +143,10 @@ window.onload = function() {
             elements[i].onmouseout = null;
         }
     }
-    // INJECT CSS
+    $('.carousel').carousel({
+            interval: 8000
+        })
+        // INJECT CSS
     var css = document.createElement('style');
     css.type = 'text/css';
     css.innerHTML = '.typewrite > .wrap { border-right: 0.08em solid #000000}';

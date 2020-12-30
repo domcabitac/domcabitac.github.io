@@ -1,0 +1,163 @@
+@font-face {
+    font-family: 'Avenir LT Std';
+    src: url('fonts/AvenirLTStd-Book.woff') format('woff');
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Avenir LT Std';
+    color: #3a3a3a;
+    font-weight: lighter;
+}
+
+#mainTitle {
+    padding-top: 1%;
+    font-weight: 500;
+    text-align: center;
+    display: block;
+    font-size: 90px;
+    font-family: 'Avenir LT Std';
+}
+
+.description {
+    font-family: 'Avenir LT Std';
+    font-size: 1.2rem;
+    line-height: 2.25rem;
+}
+
+#backbutton {
+    width: 70px;
+    height: 70px;
+    float: left;
+    position: absolute;
+    z-index: 1;
+    transition: transform 0.2s;
+}
+
+#backbutton:hover {
+    transform: scale(1.2);
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 30px;
+    margin-top: 0.5rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.carousel-inner {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #bbb;
+    animation: fadeInAndScale 0.8s ease-in-out forwards;
+    transition: 250ms all ease;
+}
+
+.badge {
+    background-color: rgb(247, 247, 247);
+    border-color: rgb(247, 247, 247);
+    margin-bottom: 1rem;
+}
+
+@keyframes fadeInAndScale {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+a {
+    color: #082D40 !important;
+}
+
+a:hover {
+    text-decoration: none !important;
+    color: #30A8BB !important;
+}
+
+@media screen and (max-width: 991px) {
+    #mainTitle {
+        font-size: 65px;
+    }
+    .project {
+        flex-direction: column-reverse;
+    }
+    .title {
+        margin-top: 1rem;
+    }
+    .description {
+        font-size: 1.1rem;
+    }
+    .project {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    a {
+        color: #082D40 !important;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .text {
+        padding: 2.5rem !important;
+    }
+    #mainTitle {
+        font-size: 50px;
+    }
+    .description {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    #backbutton {
+        width: 50px;
+        height: 50px;
+        float: left;
+        position: absolute;
+        z-index: 1;
+        transition: transform 0.2s;
+    }
+    #mainTitle {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #mainTitle {
+        font-size: 35px;
+        font-weight: 500;
+        margin-bottom: rem;
+    }
+    .description {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    .title {
+        font-size: 25px;
+        font-weight: 400;
+    }
+    .subtitle {
+        font-size: 25px;
+        font-weight: 400;
+    }
+    .project {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+}
