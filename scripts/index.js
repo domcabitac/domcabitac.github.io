@@ -58,12 +58,13 @@ window.onload = function() {
             elements[i].onmouseout = null;
         }
     }
-    $('.carousel').carousel({
-            interval: 8000
-        })
-        // INJECT CSS
+
+    // INJECT CSS
     var css = document.createElement('style');
     css.type = 'text/css';
-    css.innerHTML = '.typewrite > .wrap { border-right: 0.08em solid #000000}';
+    css.innerHTML = '.typewrite > .wrap { border-right: 0.08em solid #3a3a3a}';
     document.body.appendChild(css);
+    $('.carousel').carousel({
+        interval: 8000
+    })
 };

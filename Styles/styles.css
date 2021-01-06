@@ -1,67 +1,76 @@
 @font-face {
-  font-family: 'Avenir LT Std';
-  src: url('fonts/AvenirLTStd-Book.woff') format('woff');
+    font-family: 'Avenir LT Std';
+    src: url('fonts/AvenirLTStd-Book.woff') format('woff');
 }
 
 body {
-  background-color: #ffffff;
-  font-family: 'Avenir LT Std';
+    background-color: #ffffff;
+    font-family: 'Avenir LT Std';
+}
+
+* {
+    color: black;
+    text-decoration: none;
 }
 
 title {
-  padding-top: 15%;
-  font-weight: 500;
-  text-align: center;
-  display: block;
-  color: #3a3a3a;
-  font-size: 90px;
-  font-family: 'Avenir LT Std';
-}
-
-#typeWritter {
-  color: #3a3a3a;
-  font-weight: 75;
-  font-size: 40px;
-  font-weight: lighter;
-}
-
-a {
-  display: inline-block;
-  bottom: 0;
-  margin: 30px;
-  margin-top: 15%;
-  transition: transform 0.2s; /* Animation */
-}
-.email {
-  fill: red;
-}
-a:hover {
-  transform: scale(1.3);
-}
-
-@media only screen and (max-width: 600px) {
-  a {
-    display: inline-block;
-    bottom: 0;
-    margin: 10px;
-    margin-top: 65%;
-    transition: transform 0; /* Animation */
-  }
-  a:hover {
-    transform: scale(1);
-  }
-  title {
-    padding-top: 20%;
-    font-weight: 400;
+    padding-top: 15%;
+    font-weight: 500;
     text-align: center;
     display: block;
     color: #3a3a3a;
-    font-size: 65px;
-  }
-  #typeWritter {
+    font-size: 90px;
+    font-family: 'Avenir LT Std';
+}
+
+#typeWritter {
     color: #3a3a3a;
-    font-size: 28px;
-    margin-top: 5%;
+    font-weight: 75;
+    font-size: 40px;
     font-weight: lighter;
-  }
+}
+
+a {
+    display: inline-block;
+    bottom: 0;
+    margin: 30px;
+    margin-top: 15%;
+    transition: transform 0.2s;
+    /* Animation */
+}
+
+.email {
+    fill: red;
+}
+
+a:hover {
+    transform: scale(1.3);
+}
+
+@media only screen and (max-width: 600px) {
+    a {
+        display: inline-block;
+        bottom: 0;
+        margin: 10px;
+        margin-top: 65%;
+        transition: transform 0;
+        /* Animation */
+    }
+    a:hover {
+        transform: scale(1);
+    }
+    title {
+        padding-top: 20%;
+        font-weight: 400;
+        text-align: center;
+        display: block;
+        color: #3a3a3a;
+        font-size: 65px;
+    }
+    #typeWritter {
+        color: #3a3a3a;
+        font-size: 28px;
+        margin-top: 5%;
+        font-weight: lighter;
+    }
 }
