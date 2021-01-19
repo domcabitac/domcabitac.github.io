@@ -39,10 +39,6 @@ a {
     /* Animation */
 }
 
-.email {
-    fill: red;
-}
-
 a:hover {
     transform: scale(1.3);
 }
