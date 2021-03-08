@@ -101,7 +101,7 @@ a:hover {
         fill: white;
     }
     #typeWritter {
-        color: white;
+        color: rgba(255, 255, 255, 0.719);
         font-size: 28px;
         margin-top: 5%;
         font-weight: lighter;
