@@ -133,7 +133,7 @@ a:hover {
 .ba-grid {
     position: relative;
     z-index: 1;
-    background-image: radial-gradient(ellipse at bottom left, rgba(76, 95, 104, 0.4) 10%, rgba(138, 114, 76, 0) 40%), linear-gradient(to bottom, #293036, rgba(42, 60, 87, 0.4)), linear-gradient(135deg, #191D20, #384149);
+    background-image: radial-gradient(ellipse at bottom left, rgba(76, 95, 104, 0.4) 10%, rgba(138, 114, 76, 0) 40%), linear-gradient(to bottom, #293036, rgba(0, 0, 0, 0.4)), linear-gradient(135deg, #191D20, #384149);
 }
 
 .ba-grid:before,
