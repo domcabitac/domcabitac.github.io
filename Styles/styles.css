@@ -19,13 +19,10 @@ center {
     width: 100%;
 }
 
-svg {
+a>svg {
     width: 45px;
     height: 45px;
     fill: white;
-}
-
-a>svg {
     animation: fadeInAndScale 0.8s ease-in-out forwards;
     transition: 250ms all ease;
 }
@@ -79,7 +76,7 @@ a:hover {
     a {
         display: inline-block;
         bottom: 0;
-        margin: 10px;
+        margin: 10px 13px;
         margin-top: 65%;
         transition: transform 0;
         /* Animation */
@@ -95,7 +92,7 @@ a:hover {
         color: white;
         font-size: 65px;
     }
-    svg {
+    a>svg {
         width: 37px;
         height: 37px;
         fill: white;
@@ -106,93 +103,37 @@ a:hover {
         margin-top: 5%;
         font-weight: lighter;
     }
-     :root {
-        --gird-width: 30px !important;
-        --gird-height: 30px !important;
-        --point-gap-width: calc(var(--gird-width) * 2.75) !important;
-        --point-gap-height: calc(var(--gird-height) * 2.75) !important;
-    }
 }
 
-:root {
-    --gird-width: 30px;
-    --gird-height: 30px;
-    --line-color: #999;
-    --dot-color: #ccc;
-    --dot-size: 2px;
-    --point-gap-width: calc(var(--gird-width) * 4);
-    --point-gap-height: calc(var(--gird-height) * 4);
-}
-
-.grid-bg {
+.svg-container {
+    height: 100vh;
     width: 100%;
-    height: 100%;
-    overflow: hidden;
 }
 
-.ba-grid {
-    position: relative;
-    z-index: 1;
-    background-image: linear-gradient(to bottom, #293036, rgba(0, 0, 0, 0.4)), linear-gradient(135deg, #191D20, #384149);
+.st0 {
+    fill: #161616;
 }
 
-.ba-grid:before,
-.ba-grid:after,
-.inner:before,
-.inner:after {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    mix-blend-mode: overlay;
+.st1 {
+    fill: #1A1A1A;
 }
 
-.ba-grid:before {
-    background-image: linear-gradient(var(--line-color), transparent 1px), linear-gradient(to right, var(--line-color), transparent 1px);
-    background-size: 100% var(--gird-height), var(--gird-width) 100%;
+.st2 {
+    fill: #1F1F1F;
 }
 
-.ba-grid:after {
-    background-image: radial-gradient(var(--dot-color) 1px, transparent 1px);
-    background-size: var(--point-gap-width) var(--point-gap-height);
-    background-position: calc(var(--point-gap-width) / 2) calc(var(--point-gap-height) / 2);
+.st3 {
+    fill: #252525;
 }
 
-.inner:before,
-.inner:after {
-    background-image: radial-gradient(var(--dot-color) var(--dot-size), transparent var(--dot-size));
-    background-size: var(--point-gap-width) var(--point-gap-height);
-    background-position: calc(var(--point-gap-width) / 2) calc(var(--point-gap-height) / 2);
+.st4 {
+    fill: #2C2C2C;
 }
 
-.inner:after {
-    transform: scale(1.1, 1.1);
+.st5 {
+    fill: #343434;
 }
 
-.inner:before {
-    transform: scale(1.2, 1.2);
-}
-
-.anim:after {
-    animation: 6.4s linear move infinite;
-}
-
-.anim .inner:after {
-    animation: 3.2s linear move infinite;
-}
-
-.anim .inner:before {
-    animation: 1.6s linear move infinite;
-}
-
-@keyframes move {
-    0% {
-        background-position: calc(var(--point-gap-width) / 2) calc(var(--point-gap-height) / 2);
-    }
-    100% {
-        background-position: calc(var(--point-gap-width) / 2) calc(var(--point-gap-height) / 2 * -1);
-    }
+.st6 {
+    fill: #3D3D3D;
 }
