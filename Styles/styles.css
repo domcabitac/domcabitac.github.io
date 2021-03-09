@@ -29,6 +29,10 @@ a>svg {
     transition: 250ms all ease;
 }
 
+a>svg:hover {
+    fill: #02DAF7;
+}
+
 @keyframes fadeInAndScale {
     from {
         opacity: 0;
@@ -97,6 +101,9 @@ a:hover {
     a>svg {
         width: 37px;
         height: 37px;
+        fill: white;
+    }
+    a>svg:hover {
         fill: white;
     }
     #typeWritter {
