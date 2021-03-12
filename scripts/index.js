@@ -62,7 +62,7 @@ window.onload = function() {
     // INJECT CSS
     var css = document.createElement('style');
     css.type = 'text/css';
-    css.innerHTML = '.typewrite > .wrap { border-right: 0.08em solid rgba(255, 255, 255, 0.719)}';
+    css.innerHTML = '.typewrite > .wrap { border-right: 0.08em solid #02DAF7}';
     document.body.appendChild(css);
     $('.carousel').carousel({
         interval: 8000
