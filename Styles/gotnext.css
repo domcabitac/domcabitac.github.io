@@ -1,11 +1,7 @@
-@font-face {
-    font-family: 'Avenir LT Std';
-    src: url('fonts/AvenirLTStd-Book.woff') format('woff');
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 body {
     background-color: #ffffff;
-    font-family: 'Avenir LT Std';
+    font-family: 'Poppins', sans-serif;
     color: #3a3a3a;
     font-weight: lighter;
 }
@@ -16,11 +12,11 @@ body {
     text-align: center;
     display: block;
     font-size: 90px;
-    font-family: 'Avenir LT Std';
+    font-family: 'Poppins', sans-serif;
 }
 
 .description {
-    font-family: 'Avenir LT Std';
+    font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
     line-height: 2.25rem;
 }

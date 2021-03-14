@@ -1,11 +1,7 @@
-@font-face {
-    font-family: 'Avenir LT Std';
-    src: url('fonts/AvenirLTStd-Book.woff') format('woff');
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 body {
     background-color: #ffffff;
-    font-family: 'Avenir LT Std';
+    font-family: 'Poppins', sans-serif;
 }
 
 #code {
@@ -15,7 +11,7 @@ body {
     display: block;
     color: #3a3a3a;
     font-size: 90px;
-    font-family: 'Avenir LT Std';
+    font-family: 'Poppins', sans-serif;
 }
 
 .projects {
@@ -24,7 +20,7 @@ body {
     margin: 12px;
     color: #3a3a3a;
     font-weight: 100;
-    font-family: 'Avenir LT Std';
+    font-family: 'Poppins', sans-serif;
 }
 
 .box:hover {
@@ -79,6 +75,12 @@ body {
 .fade-in {
     max-width: 1490px;
     margin: 0 auto;
+}
+
+@media only screen and (max-width: 1491px) {
+    .fade-in {
+        max-width: 1105px;
+    }
 }
 
 

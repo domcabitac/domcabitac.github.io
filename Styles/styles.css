@@ -1,12 +1,13 @@
-@font-face {
-    font-family: 'Avenir LT Std';
+/* @font-face {
+    font-family: 'Poppins', sans-serif;;
     src: url('fonts/AvenirLTStd-Book.woff') format('woff');
-}
+} */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 html,
 body {
     /* background-color: #ffffff; */
-    font-family: 'Avenir LT Std';
+    font-family: 'Poppins', sans-serif;
     padding: 0;
     margin: 0;
     /* width: 100%;
@@ -50,18 +51,19 @@ a>svg:hover {
 
 title {
     padding-top: 15%;
-    font-weight: 500;
+    font-weight: 400;
     text-align: center;
     display: block;
     color: white;
     z-index: 50;
     font-size: 90px;
-    font-family: 'Avenir LT Std';
+    font-family: 'Poppins', sans-serif;
+    ;
 }
 
 #typeWritter {
     color: rgba(255, 255, 255, 0.719);
-    font-weight: 75;
+    font-weight: 100;
     font-size: 40px;
     font-weight: lighter;
 }
