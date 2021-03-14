@@ -94,11 +94,11 @@ a:hover {
     }
     title {
         padding-top: 20%;
-        font-weight: 400;
         text-align: center;
         display: block;
         color: white;
         font-size: 65px;
+        line-height: 1.2;
     }
     a>svg {
         width: 37px;
