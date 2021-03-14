@@ -72,6 +72,13 @@ body {
     margin-bottom: 1rem;
 }
 
+footer {
+    float: right;
+    padding: 1rem;
+    color: #3a3a3a;
+    font-size: 0.9rem;
+}
+
 @keyframes fadeInAndScale {
     from {
         opacity: 0;

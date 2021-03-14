@@ -88,6 +88,13 @@ a:hover {
     color: #265939 !important;
 }
 
+footer {
+    float: right;
+    padding: 1rem;
+    color: #3a3a3a;
+    font-size: 0.9rem;
+}
+
 @media screen and (max-width: 991px) {
     #mainTitle {
         font-size: 65px;
