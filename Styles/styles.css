@@ -25,13 +25,13 @@ center {
 a>svg {
     width: 45px;
     height: 45px;
-    fill: white;
+    stroke: white;
     animation: fadeInAndScale 0.8s ease-in-out forwards;
     transition: 250ms all ease;
 }
 
 a>svg:hover {
-    fill: #02DAF7;
+    stroke: #02DAF7;
 }
 
 @keyframes fadeInAndScale {
@@ -103,10 +103,10 @@ a:hover {
     a>svg {
         width: 37px;
         height: 37px;
-        fill: white;
+        stroke: white;
     }
     a>svg:hover {
-        fill: white;
+        stroke: white;
     }
     #typeWritter {
         color: rgba(255, 255, 255, 0.719);
