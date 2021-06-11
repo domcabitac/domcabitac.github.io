@@ -59,6 +59,7 @@ body {
     animation: fadeInAndScale 0.8s ease-in-out forwards;
     transition: 250ms all ease;
     box-shadow: 0 0 10px #bbb;
+    border-radius: 7px;
 }
 
 @keyframes fadeInAndScale {
