@@ -28,7 +28,7 @@ a>svg {
 }
 
 a>svg:hover {
-    stroke: #02DAF7;
+    stroke: #3DBEE5;
 }
 
 @keyframes fadeInAndScale {
