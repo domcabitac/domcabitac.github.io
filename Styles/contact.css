@@ -74,9 +74,6 @@ h1{
 form {
   margin: 2em 0;
 }
-/**
-* Make the field a flex-container, reverse the order so label is on top.
-*/
   textarea{
     overflow:hidden;
 
@@ -86,12 +83,6 @@ form {
   flex-flow: column-reverse;
   margin-bottom: 1em;
 }
-/**
-* Add a transition to the label and input.
-* I'm not even sure that touch-action: manipulation works on
-* inputs, but hey, it's new and cool and could remove the 
-* pesky delay.
-*/
 label, input, textarea {
   transition: all 0.2s;
   touch-action: manipulation;
@@ -118,12 +109,6 @@ label {
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
-/**
-* Translate down and scale the label up to cover the placeholder,
-* when following an input (with placeholder-shown support).
-* Also make sure the label is only on one row, at max 2/3rds of the
-* field—to make sure it scales properly and doesn't wrap.
-*/
 input:placeholder-shown + label,
 textarea:placeholder-shown + label
 {
@@ -135,26 +120,14 @@ textarea:placeholder-shown + label
   transform-origin: left bottom;
   transform: translate(0, 2.125rem) scale(1.5);
 }
-/**
-* By default, the placeholder should be transparent. Also, it should 
-* inherit the transition.
-*/
 ::-webkit-input-placeholder {
   opacity: 0;
   transition: inherit;
 }
-/**
-* Show the placeholder when the input is focused.
-*/
 input:focus::-webkit-input-placeholder,
 textarea:focus::-webkit-input-placeholder {
   opacity: 1;
 }
-/**
-* When the element is focused, remove the label transform.
-* Also, do this when the placeholder is _not_ shown, i.e. when 
-* there's something in the input at all.
-*/
 input:not(:placeholder-shown) + label,
 input:focus + label,
 textarea:not(:placeholder-shown) + label,
