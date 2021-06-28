@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+html,
+body {
+    font-family: 'Poppins', sans-serif !important;
+    background-color: #ffffff !important;
+}
+svg{
+  width:50%;
+  height:50%;
+  visibility:hidden;
+}
+
+.rings {
+  position: absolute;
+  width: 800px;
+  bottom: -75px;
+  left: 50%;
+  margin-left: -400px;
+}
+.rings .ring__ringlet {
+  width: 400px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+  margin-left: 50%;
+  left: -200px;
+  position: absolute;
+  bottom: -160px;
+  transform: scale(0.1, 0.1);
+  opacity: 0;
+  -webkit-animation: ring-1 3000ms ease-out infinite;
+          animation: ring-1 3000ms ease-out infinite;
+}
+.rings .ring__ringlet:nth-of-type(2) {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+.rings .ring__ringlet:nth-of-type(3) {
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
+}
+
+@-webkit-keyframes ring-1 {
+  0% {
+    transform: scale(0.1, 0.1);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2, 1.2);
+    opacity: 0;
+  }
+}
+
+@keyframes ring-1 {
+  0% {
+    transform: scale(0.1, 0.1);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2, 1.2);
+    opacity: 0;
+  }
+}
+h1{
+  text-transform: uppercase;
+}
+form {
+  margin: 2em 0;
+}
+/**
+* Make the field a flex-container, reverse the order so label is on top.
+*/
+  textarea{
+    overflow:hidden;
+
+  }
+.field {
+  display: flex;
+  flex-flow: column-reverse;
+  margin-bottom: 1em;
+}
+/**
+* Add a transition to the label and input.
+* I'm not even sure that touch-action: manipulation works on
+* inputs, but hey, it's new and cool and could remove the 
+* pesky delay.
+*/
+label, input, textarea {
+  transition: all 0.2s;
+  touch-action: manipulation;
+}
+
+input, textarea {
+  font-size: 1.5em;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  font-family: inherit;
+  -webkit-appearance: none;
+  border-radius: 0;
+  padding: 0;
+  cursor: text;
+}
+
+input:focus,
+textarea:focus {
+  outline: 0;
+  border-bottom: 1px solid #666;
+}
+
+label {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+/**
+* Translate down and scale the label up to cover the placeholder,
+* when following an input (with placeholder-shown support).
+* Also make sure the label is only on one row, at max 2/3rds of the
+* field—to make sure it scales properly and doesn't wrap.
+*/
+input:placeholder-shown + label,
+textarea:placeholder-shown + label
+{
+  cursor: text;
+  max-width: 66.66%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transform-origin: left bottom;
+  transform: translate(0, 2.125rem) scale(1.5);
+}
+/**
+* By default, the placeholder should be transparent. Also, it should 
+* inherit the transition.
+*/
+::-webkit-input-placeholder {
+  opacity: 0;
+  transition: inherit;
+}
+/**
+* Show the placeholder when the input is focused.
+*/
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+/**
+* When the element is focused, remove the label transform.
+* Also, do this when the placeholder is _not_ shown, i.e. when 
+* there's something in the input at all.
+*/
+input:not(:placeholder-shown) + label,
+input:focus + label,
+textarea:not(:placeholder-shown) + label,
+textarea:focus + label {
+  transform: translate(0, 0) scale(1);
+  cursor: pointer;
+}
+.grow-wrap {
+  /* easy way to plop the elements on top of each other and have them both sized based on the tallest one's height */
+  display: grid;
+}
+.grow-wrap::after {
+  /* Note the weird space! Needed to preventy jumpy behavior */
+  content: attr(data-replicated-value) " ";
+
+  /* This is how textarea text behaves */
+  white-space: pre-wrap;
+
+  /* Hidden from view, clicks, and screen readers */
+  visibility: hidden;
+}
+.grow-wrap > textarea {
+  /* You could leave this, but after a user resizes, then it ruins the auto sizing */
+  resize: none;
+}
+
+.ring-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  width: 25px;
+  padding: 0;
+  margin: 0;
+  margin-right: 0.7rem;
+}
+.circle {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+}
+
+.ringring {
+  border: 3px solid white;
+  -webkit-border-radius: 30px;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  -webkit-animation: pulsate 2s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  opacity: 0;
+}
+
+@keyframes b {
+  0%,
+  to {
+      transform-origin: center;
+      transform: scale(0.8);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+}
+
+@keyframes pulsate {
+  0% {
+      -webkit-transform: scale(0.1, 0.1);
+      opacity: 0;
+  }
+  50% {
+      opacity: 1;
+  }
+  100% {
+      -webkit-transform: scale(1.2, 1.2);
+      opacity: 0;
+  }
+}
+
+svg,
+object{
+  opacity: 30% !important;
+}
+.btn{
+  display: flex !important;
+  border-radius: 67px !important;
+  background-color: #666;
+  color: white;
+  margin-left: 1rem;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+.btn:hover{
+  color: #666;
+  background-color: transparent;
+  border: 1px solid #666;
+}
+
+.btn:hover .circle{
+  background-color: #666;
+}
+.btn:hover .ringring{
+  border: 3px solid #666;
+}
+.contacts{
+  margin-top: 2%;
+}
+h1{
+  padding-top: 1%;
+  font-weight: 500;
+  text-align: center;
+  display: block;
+  color: #3a3a3a;
+  font-size: 90px !important;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 10rem !important;
+}
+.contactArea{
+  margin-top: -3rem;
+}
+
+#backbutton {
+  margin: 0.5rem;
+  width: 70px;
+  height: 70px;
+  float: left;
+  top: 0;
+  position: absolute;
+  z-index: 1;
+  transition: transform 0.2s;
+}
+
+#backbutton:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 991px) {
+  h1{
+    font-size: 65px !important;
+    margin-bottom: 3rem !important;
+  }
+  .logo{
+    position: absolute !important;
+  }
+  .logo object{
+      width: 150px !important;
+      position: absolute;
+      top: -8rem;
+      right: 4rem;
+      /* margin-left: 15rem; */
+  }
+}
+@media screen and (max-width: 767px) {
+  h1{
+    font-size: 45px !important;
+  }
+  .logo object{
+    width: 120px !important;
+    top: -7rem;
+    right: 1rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  #backbutton
+   { width: 40px;
+    height: 40px;}
+  .contacts{
+    padding: 10% !important;
+  }
+  h1{
+    padding-top: 5%;
+    font-size: 50px !important;
+    margin-bottom: 2rem !important;
+  }
+  .logo object{
+    width: 120px !important;
+    top: -7rem;
+    right: 1rem;
+  }
+  svg,
+object{
+  opacity: 25% !important;
+}
+}
