@@ -213,6 +213,9 @@ svg,
 object{
   opacity: 30% !important;
 }
+.bottomArea{
+  margin-top: 1rem;
+}
 .btn{
   display: flex !important;
   border-radius: 67px !important;
@@ -220,12 +223,18 @@ object{
   color: white;
   margin-left: 1rem;
   text-transform: uppercase;
-  margin-top: 1rem;
+  padding: .375rem 1.5rem !important;
 }
 .btn:hover{
   color: #666;
   background-color: transparent;
   border: 1px solid #666;
+}
+
+.disclaimer{
+  font-style: italic;
+  opacity: 0.4;
+  margin-left: 2rem;
 }
 
 .btn:hover .circle{
@@ -312,8 +321,20 @@ h1{
     top: -7rem;
     right: 1rem;
   }
+  .bottomArea{
+    margin-top: 2rem;
+  }
+  .btn{
+    padding: .375rem 6rem !important;
+  }
+  .disclaimer{
+    /* margin-left: 1rem; */
+    margin-top: 2rem;
+    font-size: 0.9rem;
+  }
   svg,
-object{
-  opacity: 25% !important;
-}
+  object{
+    opacity: 25% !important;
+  }
+
 }
